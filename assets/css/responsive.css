@@ -1,0 +1,41 @@
+@media screen and (min-width : 1400px) {
+    :root {
+        --container-max-width: 1320px;
+    }
+
+    .navbar-mobile{
+        display: none;
+    }
+}
+
+@media screen and (min-width : 1200px) and (max-width : 1399px) {
+    :root {
+        --container-max-width: 1140px;
+    }
+
+    .navbar-mobile{
+        display: none;
+    }
+}
+
+@media screen and (min-width : 992px) and (max-width : 1199px) {
+    :root {
+        --container-max-width: 960px;
+    }
+
+    .navbar-mobile{
+        display: none;
+    }
+}
+
+@media screen and (min-width : 768px) and (max-width : 991px) {
+    :root {
+        --container-max-width: 720px;
+    }
+}
+
+@media screen and (min-width : 576px) and (max-width : 767px) {
+    :root {
+        --container-max-width: 540px;
+    }
+}
