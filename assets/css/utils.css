@@ -120,3 +120,23 @@
 .flex-column{
     flex-direction: column;
 }
+
+.section-divider{
+    height: 1px;
+    background-color: white;
+    margin: 40px 0px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.form-label{
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.col-span-2{
+    grid-column: span 2;
+}
