@@ -73,7 +73,6 @@
 
 .bg-pattern{
     background-image: url(../img/pattern-bg.png);
-    background-size: contain;
     background-repeat: repeat;
 }
 
