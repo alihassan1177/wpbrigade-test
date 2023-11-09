@@ -16,6 +16,8 @@
     --container-max-width: 540px;
     --container-padding: 15px;
 
+    --content-max-width : calc(var(--container-max-width) - 315px);
+
     /* Buttons */
     --btn-padding-y: 10px;
     --btn-padding-x: 24px;
@@ -166,6 +168,7 @@ header {
     color: var(--clr-notification-text);
     flex-grow: 1;
     text-align: center;
+    padding: 10px 0px;
 }
 
 .notification-close {
@@ -247,14 +250,22 @@ header {
     position: relative;
 }
 
-.hero-section::after {
-    content: "";
+.hero-overlay{
     position: absolute;
     inset: 0;
     background-color: var(--clr-green-300);
     z-index: 1;
     opacity: 0.8;
 }
+
+/* .hero-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--clr-green-300);
+    z-index: 1;
+    opacity: 0.8;
+} */
 
 .slider {
     z-index: 2;
@@ -325,11 +336,14 @@ header {
     padding: 80px 0px;
 }
 
+.content {
+    max-width: var(--content-max-width);
+}
+
 .product-img {
     position: relative;
     padding: 10px;
     z-index: 1;
-    max-width: max-content;
     background-image: url(../img/pattern-bg.png);
 }
 
@@ -409,6 +423,7 @@ header {
 .large-post-body {
     padding: 50px;
     position: relative;
+    max-width: 330px;
 }
 
 .large-post-body:nth-child(1) {
@@ -667,6 +682,35 @@ header {
 
 .mobile-menu{
     display: none;
+    position: absolute;
+    background-color: var(--clr-green-200);
+    background-image: url(../img/pattern-bg.png);
+    right: 0px;
+    left: 0px;
+    padding: 20px var(--container-padding);
+}
+
+.mobile-navigation a{
+    padding: 20px;
+    max-width: max-content;
+}
+
+.mobile-navigation a::after{
+    transform: skew(0deg);
+}
+
+.mobile-navigation a:hover::after
+{
+    background-image: url(../img/pattern-bg.png);
+}
+
+.mobile-search{
+    margin-bottom: 20px;
+}
+
+.mobile-navigation {
+    display: flex;
+    flex-direction: column;
 }
 
 .section-heading{
@@ -701,4 +745,76 @@ header {
     transform: translateY(-50%);
     left:  -30px;
     right: -30px;
+}
+
+ .hero-section .owl-carousel .owl-item img {
+    display: revert !important;
+    width: auto !important;
+}
+
+.product-slider-wrapper{
+    padding: 0px 60px;
+}
+
+.owl-prev, .owl-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+}
+
+
+.owl-prev{
+    left: 0px;
+}
+
+.owl-next{
+    right: 0px;
+}
+
+.large-post-img img {
+    object-fit: cover;
+}
+
+.slider .owl-prev{
+    left: 40px;
+}
+.slider .owl-next{
+    right: 40px;
+}
+
+.slider .owl-nav{
+    padding: 0px 40px;
+    z-index: 1;
+    max-width: 1600px;
+}
+
+.product-slider .owl-dots{
+    margin-top: 30px;
+}
+
+.owl-carousel, .owl-carousel .owl-item {
+    position: static;
+}
+
+.slider{
+    position: absolute;
+    inset: 0;
+    padding-top: 80px;
+}
+
+.slider .owl-dots{
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    right: 0px;
+}
+
+.video-play-btn{
+    display: grid;
+    place-items: center;
+}
+
+.video-play-btn img{
+    cursor: pointer !important;
 }
