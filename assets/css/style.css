@@ -492,12 +492,14 @@ header {
 .sidebar{
     position: sticky;
     top: 160px;
+    min-width: 100%;
 }
 
 .widget-header{
     background-color: var(--clr-green-200);
     background-image: url(../img/pattern-bg.png);
-    padding: 15px;   
+    padding: 7px 20px;
+    line-height: 1.56;
 }
 
 .widget-title{
@@ -518,8 +520,8 @@ header {
 }
 
 .mini-post-count{
-    min-width:  45px;
-    min-height: 45px;
+    min-width:  46px;
+    max-height: 46px;
     background-color: white;
     font-family: var(--font-montserrat);
     color: var(--clr-green-100);
@@ -530,11 +532,12 @@ header {
 }
 
 .mini-post-heading{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     text-transform: uppercase;
     border-bottom: 1px solid var(--clr-text-secondary);
     margin-bottom: 10px;
+    font-family: var(--font-oswald);
 }
 
 .mini-post-label{
@@ -547,7 +550,7 @@ header {
 .mini-post-wrapper{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .section-heading{

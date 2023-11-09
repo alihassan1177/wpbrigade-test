@@ -39,6 +39,7 @@
 
 .btn-style-1::after{
     background-color: var(--clr-green-200);
+    background-image: url(../img/pattern-bg.png);
 }
 
 .btn-style-1::after , .navigation a::after{
@@ -48,6 +49,7 @@
     transform: skew(-15deg);
     z-index: -1;
     transition: background-color 300ms ease-in-out;
+    background-size: contain;
 }   
 
 .btn-style-1:nth-child(1)::after{
