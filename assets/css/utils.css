@@ -30,7 +30,7 @@
 }
 
 .btn-style-1{
-    min-width: 140px;
+    min-width: 148px;
 }
 
 .btn-style-1:hover::after{
@@ -45,7 +45,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    transform: skew(-20deg);
+    transform: skew(-15deg);
     z-index: -1;
     transition: background-color 300ms ease-in-out;
 }   
@@ -141,4 +141,8 @@
 
 .col-span-2{
     grid-column: span 2;
+}
+
+.secondary-menu-desktop .btn:nth-child(1) {
+    margin-right: 8px;
 }
