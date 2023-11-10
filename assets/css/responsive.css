@@ -113,6 +113,14 @@
         align-items: center;
     }
 
+    .slide-img {
+        min-width: 100%;
+    }
+
+    .slide-img > img {
+        max-width: 250px !important;
+    }
+
     .navbar-mobile .navbar .container{
         width: 100%;
     }
