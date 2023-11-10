@@ -21,6 +21,7 @@
 @media screen and (min-width : 992px) and (max-width : 1199px) {
     :root {
         --container-max-width: 960px;
+        --container-padding: 15px;
     }
 
     .navbar-mobile{
@@ -50,6 +51,7 @@
     :root {
         --container-max-width: 100%;
         --content-max-width : calc(100vw - 320px);
+        --container-padding: 15px;
     }
     
     .slide-content{
@@ -94,6 +96,7 @@
     :root {
         --container-max-width: 100%;
         --content-max-width : 100%;
+        --container-padding: 15px;
 
 
         --slide-heading-font-size: 30px;
