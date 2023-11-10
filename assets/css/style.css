@@ -587,7 +587,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .radio-button-wrapper label{
@@ -625,6 +625,7 @@ header {
 
 .form-button{
    text-align: center;
+   margin-top: 7px;
 }
 
 .form-button button {
@@ -642,7 +643,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 12px;
     margin-bottom: 15px;
 }
 
@@ -854,5 +855,5 @@ header {
 }
 
 .form-textarea{
-    min-height: 95px;
+    min-height: 88px;
 }
