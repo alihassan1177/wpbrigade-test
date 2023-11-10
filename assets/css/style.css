@@ -1,8 +1,8 @@
 :root {
     /* Colors */
-    --clr-green-100: #278245;
-    --clr-green-200: #1A5B3B;
-    --clr-green-300: #0B3327;
+    --clr-green-100: #1B7D3B;
+    --clr-green-200: #08512D;
+    --clr-green-300: #063023;
     --clr-search-placeholder: #81968F;
     --clr-notification-text: #222222;
     --clr-text-secondary : #BDD8C6;
@@ -240,8 +240,8 @@ header {
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 0px;
-    margin-top: 2px;
-    font-size: 13px;
+    font-size: 14px;
+    font-family: var(--font-oswald);
 }
 
 .hero-section {
@@ -839,8 +839,9 @@ header {
 }
 
 .partner > div{
-    margin-left: -44px;
-    gap: 6px;
+    margin-left: -49px;
+    gap: 9px;
+    margin-top: -6px;
 }
 
 .product-slider.owl-carousel .owl-dot {
